@@ -1,0 +1,28 @@
+-- This file has been generated from package.yaml by hpack version 0.17.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           operating-system
+version:        0.1.0
+synopsis:       Reflect the host and target operating systems at type level
+description:    @operating-system@ defines a type enumerating the supported operating
+                systems and synonyms for the current host and target. We can use these
+                types to avoid polluting other modules with pre-processor macros.
+homepage:       https://github.com/ttuegel/operating-system#readme
+bug-reports:    https://github.com/ttuegel/operating-system/issues
+build-type:     Simple
+cabal-version:  >= 1.10
+
+source-repository head
+  type: git
+  location: https://github.com/ttuegel/operating-system
+
+library
+  build-depends:
+      base
+    , singletons
+  exposed-modules:
+      OS
+  other-modules:
+      Paths_operating_system
+  default-language: Haskell2010

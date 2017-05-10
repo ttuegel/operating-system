@@ -1,0 +1,15 @@
+name: operating-system
+version: 0.1.0
+github: ttuegel/operating-system
+synopsis: Reflect the host and target operating systems at type level
+description: |
+  @operating-system@ defines a type enumerating the supported operating
+  systems and synonyms for the current host and target. We can use these
+  types to avoid polluting other modules with pre-processor macros.
+
+library:
+  exposed-modules:
+    - OS
+  dependencies:
+    - base
+    - singletons
